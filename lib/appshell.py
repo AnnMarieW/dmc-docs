@@ -1,6 +1,6 @@
 from collections import defaultdict
-
-import dash_labs as dl
+import dash
+#import dash_labs as dl
 import dash_mantine_components as dmc
 from dash import Output, Input, clientside_callback, html, dcc
 from dash_iconify import DashIconify
@@ -271,7 +271,8 @@ def create_appshell(nav_data):
                             id="main-content",
                             size="lg",
                             pt=90,
-                            children=dl.plugins.page_container,
+                          #  children=dl.plugins.page_container,
+                            children=dash.page_container,
                         ),
                     ),
                     html.Div(
@@ -305,7 +306,8 @@ clientside_callback(
     }
     """,
     Output("select-component", "value"),
-    Input(dl.plugins.pages._ID_CONTENT, "children"),
+  #  Input(dl.plugins.pages._ID_CONTENT, "children"),
+    Input("_pages_content", "children"),
 )
 
 clientside_callback(

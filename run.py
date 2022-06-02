@@ -1,5 +1,5 @@
 import dash
-import dash_labs as dl
+#import dash_labs as dl
 from dash import Dash
 
 from lib.appshell import create_appshell
@@ -13,7 +13,8 @@ scripts = [
 app = Dash(
     __name__,
     suppress_callback_exceptions=True,
-    plugins=[dl.plugins.pages],
+ #   plugins=[dl.plugins.pages],
+    use_pages=True,
     external_scripts=scripts,
     update_title=None,
 )
