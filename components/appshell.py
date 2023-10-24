@@ -10,6 +10,7 @@ from dash import (
 )
 
 from components.header import create_header
+from components.sidebar import create_navbar_drawer, create_side_navbar
 from lib.constants import PRIMARY_COLOR
 
 
@@ -23,6 +24,9 @@ def create_appshell(data):
                     "Button": {"styles": {"root": {"fontWeight": 400}}},
                     "Alert": {"styles": {"title": {"fontWeight": 500}}},
                     "AvatarGroup": {"styles": {"truncated": {"fontWeight": 500}}},
+                    "Badge": {"styles": {"root": {"fontWeight": 500}}},
+                    "Progress": {"styles": {"label": {"fontWeight": 500}}},
+                    "RingProgress": {"styles": {"label": {"fontWeight": 500}}},
                     "Table": {
                         "defaultProps": {
                             "highlightOnHover": True,
@@ -39,6 +43,8 @@ def create_appshell(data):
                 dcc.Location(id="url", refresh="callback-nav"),
                 dmc.Notifications(),
                 create_header(data),
+                create_side_navbar(data),
+                create_navbar_drawer(data),
                 html.Div(
                     dmc.Container(size="lg", pt=90, children=page_container),
                     id="wrapper",

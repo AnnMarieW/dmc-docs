@@ -17,6 +17,7 @@ markdown2dash = "0.1.0a3"
 pydantic = "^2.3.0"
 pandas = "1.0"
 numpy = "1.20"
+beautifulsoup4 = "^4.12.2"
 
 [tool.poetry.dev-dependencies]
 black = "22.3.0"
