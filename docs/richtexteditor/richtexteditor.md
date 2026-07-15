@@ -184,7 +184,7 @@ The following is included by default in DMC >=2.3.0:
 
 
 ### Typography styles
-By default, `RichTextEditor` renders content with [TypographyStylesProvider](/components/typographystylesprovider) and
+By default, `RichTextEditor` renders content with [Typography](/components/typographystylesprovider) and
 some additional styles. You can disable these styles by setting `withTypographyStyles=False`.  Then you can add your own 
 CSS files, or style with the Styles API.
 
@@ -214,7 +214,7 @@ You can use the following toolbar controls to change text color:
 
 ### Table
 
-The tables will be styles with a Mantine theme. For more information refer to the [TypographyStylesProvider](/components/typographystylesprovider) section.
+The tables will be styles with a Mantine theme. For more information refer to the [Typography](/components/typographystylesprovider) section.
 You can disable these styles by setting `withTypographyStyles=False`
 
 To add controls in the toolbar for table features, see the Custom Controls section below.
@@ -517,7 +517,7 @@ If you're using an older version of DMC, refer to the [migration guide](/migrati
 | `root`                      | `.mantine-RichTextEditor-root`        | Root element                                                     |
 | `toolbar`                   | `.mantine-RichTextEditor-toolbar`     | Toolbar element                                                  |
 | `content`                   | `.mantine-RichTextEditor-content`     | Content area                                                     |
-| `typographyStylesProvider`  | `.mantine-RichTextEditor-typographyStylesProvider` | (Deprecated, use Typography) TypographyStylesProvider component, wraps content |
+| `typographyStylesProvider`  | `.mantine-RichTextEditor-typographyStylesProvider` | (Deprecated, use Typography) Typography component, wraps content |
 | `Typography`                | `.mantine-RichTextEditor-Typography`  | Typography component, wraps content                              |
 | `control`                   | `.mantine-RichTextEditor-control`     | `RichTextEditor.Control` root element, used as a base for all controls |
 | `controlIcon`               | `.mantine-RichTextEditor-controlIcon` | Control icon element                                             |
