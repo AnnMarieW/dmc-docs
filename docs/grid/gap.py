@@ -10,7 +10,6 @@ component = dmc.Grid(
         dmc.GridCol(dmc.Box("1", style=style), span=4),
         dmc.GridCol(dmc.Box("2", style=style), span=4),
         dmc.GridCol(dmc.Box("3", style=style), span=4),
-        dmc.GridCol(dmc.Box("4", style=style), span=4),
     ],
-    gap="xl",
+    gap={ "base": 5, "xs": "md", "md": "xl", "xl": 50 },
 )
