@@ -28,6 +28,13 @@ it will be represented as a string (e.g., '90071992547409910').
 - Multiple Zeros: Numbers that consist only of zeros or have trailing zeros are represented as strings (e.g., '0.', '0.0', '-0.00', etc.).
 
 
+### Loading state
+
+Set `loading` prop to display a loading indicator. By default, the loader is displayed on the right side of the input.
+You can change the position with the `loadingPosition` prop to 'left' or 'right'.
+
+.. exec::docs.numberinput.loading
+
 ### min and max
 
 Set `min` and `max` props to limit the input value:
