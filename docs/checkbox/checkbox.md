@@ -131,12 +131,21 @@ app.layout = dmc.MantineProvider(
 
 ### Checkbox Group component
 
-Use CheckboxGroup component to create inputs with multiple checkbox elements and label, description, etc. You can use either
+Use `CheckboxGroup` component to create inputs with multiple checkbox elements and label, description, etc. You can use either
 the dmc.Group or dmc.Stack to customize the orientation and spacing of checkbox elements.
 
 Use `value` property of the checkbox group in the callbacks.
 
 .. exec::docs.checkbox.group
+
+### Max Selected Values
+
+Use `maxSelectedValues` prop to limit the number of selected values in `CheckboxGroup`. When the limit is reached, the remaining checkboxes are disabled and cannot be selected.
+
+
+.. exec::docs.checkbox.group_max_select
+
+
 
 ### CheckboxIndicator component
 
