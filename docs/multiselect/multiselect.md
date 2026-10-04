@@ -82,6 +82,17 @@ Set `clearable` prop to display the clear button in the right section. The butto
 .. exec::docs.multiselect.clearable
 
 
+### Clear section mode
+The `clearSectionMode` prop determines how the `clear` button and `rightSection` are rendered:
+
+- 'both' (default) – render both the `clear` button and `rightSection`
+- 'rightSection' – render only the user-supplied `rightSection`, ignore `clear` button
+- 'clear' – render only the `clear` button, ignore `rightSection`
+
+
+.. exec::docs.multiselect.clear_section_mode
+
+
 ### Searchable
 
 Set `searchable` prop to allow filtering options by user input.

@@ -114,6 +114,16 @@ Set `clearable` prop to enable clearing selected values.
 
 .. exec::docs.select.clearable
 
+### Clear section mode
+The `clearSectionMode` prop determines how the `clear` button and `rightSection` are rendered:
+
+- 'both' (default) – render both the `clear` button and `rightSection`
+- 'rightSection' – render only the user-supplied `rightSection`, ignore `clear` button
+- 'clear' – render only the `clear` button, ignore `rightSection`
+
+
+.. exec::docs.select.clear_section_mode
+
 ### Allow deselect
 `allowDeselect` prop determines whether the value should be deselected when user clicks on the selected option. By 
 default, `allowDeselect` is True:

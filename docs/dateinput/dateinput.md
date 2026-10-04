@@ -37,6 +37,17 @@ When `clearable=True`, a clear button in the right section is displayed. Note th
 
 .. exec::docs.dateinput.clearable
 
+
+### Clear section mode
+The `clearSectionMode` prop determines how the `clear` button and `rightSection` are rendered:
+
+- 'both' (default) – render both the `clear` button and `rightSection`
+- 'rightSection' – render only the user-supplied `rightSection`, ignore `clear` button
+- 'clear' – render only the `clear` button, ignore `rightSection`
+
+
+.. exec::docs.dateinput.clear_section_mode
+
 ### Min and max date
 
 Set `minDate` and `maxDate` props to define min and max dates. If date that is after `maxDate` or before `minDate` is entered, then it will be considered invalid and input value will be reverted to last known valid date value.

@@ -63,6 +63,17 @@ Set `clearable=True` prop to display clear button in the right section. Note tha
 
 .. exec::docs.datepickerinput.clearable
 
+
+### Clear section mode
+The `clearSectionMode` prop determines how the `clear` button and `rightSection` are rendered:
+
+- 'both' (default) – render both the `clear` button and `rightSection`
+- 'rightSection' – render only the user-supplied `rightSection`, ignore `clear` button
+- 'clear' – render only the `clear` button, ignore `rightSection`
+
+
+.. exec::docs.datepickerinput.clear_section_mode
+
 ### Error Display
 
 You can convey errors in your date picker by setting the `error` prop. For instance, in the below example we try to

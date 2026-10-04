@@ -195,6 +195,17 @@ Set `clearable` prop to display the clear button in the right section. The butto
 
 .. exec::docs.autocomplete.clearable
 
+
+### Clear section mode
+The `clearSectionMode` prop determines how the `clear` button and `rightSection` are rendered:
+
+- 'both' (default) – render both the `clear` button and `rightSection`
+- 'rightSection' – render only the user-supplied `rightSection`, ignore `clear` button
+- 'clear' – render only the `clear` button, ignore `rightSection`
+
+
+.. exec::docs.autocomplete.clear_section_mode
+
 ### Dropdown open in a callback
 
 .. exec::docs.autocomplete.opened

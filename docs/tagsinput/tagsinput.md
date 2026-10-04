@@ -62,6 +62,17 @@ Set `clearable` prop to display the clear button in the right section. The butto
 
 .. exec::docs.tagsinput.clearable
 
+
+### Clear section mode
+The `clearSectionMode` prop determines how the `clear` button and `rightSection` are rendered:
+
+- 'both' (default) – render both the `clear` button and `rightSection`
+- 'rightSection' – render only the user-supplied `rightSection`, ignore `clear` button
+- 'clear' – render only the `clear` button, ignore `rightSection`
+
+
+.. exec::docs.tagsinput.clear_section_mode
+
 ### Max selected values
 
 You can limit the number of selected values with `maxTags` prop. This will not allow adding more values once the limit is reached.

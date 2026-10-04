@@ -124,6 +124,17 @@ least one of the fields has value.
 
 .. exec::docs.timepicker.clearable
 
+
+### Clear section mode
+The `clearSectionMode` prop determines how the `clear` button and `rightSection` are rendered:
+
+- 'both' (default) – render both the `clear` button and `rightSection`
+- 'rightSection' – render only the user-supplied `rightSection`, ignore `clear` button
+- 'clear' – render only the `clear` button, ignore `rightSection`
+
+
+.. exec::docs.timepicker.clear_section_mode
+
 ### Disabled
 
 .. exec::docs.timepicker.disabled
