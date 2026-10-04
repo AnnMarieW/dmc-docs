@@ -29,9 +29,22 @@ Control the number of items displayed after previous(<) and before next(>) butto
 ### Hide pages controls
 Set `withPages=False` to hide pages controls:
 
-
 .. exec::docs.pagination.withpages
 
+### Controls size
+
+By default, pagination controls have reduced size compared to inputs and buttons. If you want controls to have the same 
+size as inputs and buttons, you can use the `input-` prefix for the size prop:
+
+
+.. exec::docs.pagination.size
+
+### Start value
+
+Set `startValue` to define the starting page number. For example, with `startValue=5` and `total=15`, the pagination
+range will be from 5 to 15:
+
+.. exec::docs.pagination.start_value
 
 ### Styles API
 
