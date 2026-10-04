@@ -26,9 +26,10 @@ If you would like users to be able to enter custom values, see `TagsInput`.
 ### Data Format
 
 The data can be provided as either:
-* an array of strings - use when label and value are same.
-* an array of dicts with `label` and `value` properties.
-* an array of dict with `group` and `items` as keys where items are one of the previous two types.
+* a list of primitive values (strings, numbers, booleans): - use when label and value are same.
+* a list of dicts with `label` and `value` properties.
+* a list of dict with `group` and `items` as keys where items are one of the previous two types.
+
 
 ```python
 data = ["Pandas", "NumPy", "TensorFlow", "PyTorch"]
@@ -151,7 +152,9 @@ Example of `MultiSelect` with 100 000 options, 10 options are rendered at the sa
 
 ### renderPill
 
-`renderPill` function allows you to customize pill rendering.
+The `renderPill` function allows you to customize pill rendering. The function receives the `option` (that was passed to data),
+`value`, `onRemove` and `disabled` props. It must return a React node.
+
 
 .. functions_as_props::
 

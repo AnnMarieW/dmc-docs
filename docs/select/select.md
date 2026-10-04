@@ -27,9 +27,9 @@ its functionality, you can create your own custom `Select` component. See this [
 ### Data Format
 
 The data can be provided as either:
-* an array of strings - use when label and value are same.
-* an array of dicts with `label` and `value` properties.
-* an array of dict with `group` and `items` as keys where items are one of the previous two types.
+* a list of primitive values (strings, numbers, booleans): - use when label and value are same.
+* a list of dicts with `label` and `value` properties.
+* a list of dict with `group` and `items` as keys where items are one of the previous two types.
 
 ```python
 data = ["Pandas", "NumPy", "TensorFlow", "PyTorch"]
