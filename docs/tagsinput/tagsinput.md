@@ -131,6 +131,43 @@ Example of `TagsInput` with 100 000 options, 5 options are rendered at the same 
     :withExpandedButton: true
 
 
+### renderPill
+
+The `renderPill` function allows you to customize pill rendering. The function receives the `option` (that was passed to data),
+`value`, `onRemove` and `disabled` props. It must return a React node.  Note that since `TagsInput` allows adding custom values,
+`option` property might be generated on the fly.
+
+
+.. functions_as_props::
+
+
+.. exec::docs.tagsinput.render_pill
+    :code: false
+
+.. sourcetabs::docs/tagsinput/render_pill.py, assets/examples-js/render_pill_tagsinput.js
+    :defaultExpanded: true
+    :withExpandedButton: true
+
+
+
+### Reorder pills
+
+Set the `withPillsReorder` prop to allow reordering pills. Dropping a pill before or after another pill updates the
+component `value` accordingly. Reordering is automatically disabled when `disabled` or `readOnly` is set.
+
+You can reorder pills with a mouse (drag-and-drop) or keyboard:
+
+- Pills are not part of the `Tab` order. With focus on the input, press `ArrowLeft` (when the caret is at the start of the input) to move focus to the last pill.
+- `ArrowLeft` and `ArrowRight` move focus between pills (RTL-aware). Pressing `ArrowRight` on the last pill returns focus to the input.
+- `Alt + ArrowLeft` and `Alt + ArrowRight` reorder the focused pill (RTL-aware).
+- 
+Focus follows the moved pill so multiple moves can be chained without re-focusing.
+
+
+.. exec::docs.tagsinput.reorder
+
+
+
 ### Options filtering
 
 By default, `TagsInput` filters options by checking if the option label contains input value. You can change this behavior 
