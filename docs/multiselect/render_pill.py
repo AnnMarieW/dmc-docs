@@ -1,4 +1,5 @@
 import dash_mantine_components as dmc
+from dash import Input, Output, callback
 
 users = [
     {
@@ -28,10 +29,21 @@ users = [
     },
 ]
 
-component = dmc.MultiSelect(
-    data=users,
-    label="Candidates",
-    placeholder="Select candidates",
-    value=["Emily Johnson", "Ava Rodriguez"],
-    renderPill={ "function": "renderUserPill", "options": {"users": users}},
+component = dmc.Box([
+    dmc.MultiSelect(
+        id="multi-select-render-pill",
+        data=users,
+        label="Candidates",
+        placeholder="Select candidates",
+        value=["Emily Johnson", "Ava Rodriguez"],
+        renderPill={ "function": "renderUserPill", "options": {"users": users}},
+    ),
+    dmc.Text(id="multi-select-render-pill-val")
+])
+
+@callback(
+    Output("multi-select-render-pill-val", "children"),
+    Input("multi-select-render-pill", "value"),
 )
+def update(value):
+    return f"You selected {value}"
