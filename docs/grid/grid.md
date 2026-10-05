@@ -40,13 +40,20 @@ In the following example `span={'base': 12, 'md': 6, 'lg': 3`}:
 
 
 
-### Gutter 
+### Gap
 
 Set `gap` prop to control spacing between columns. The prop works the same way as `style` props – you can reference
 theme.spacing values with `xs`, `sm`, `md`, `lg` and `xl` strings and use dictionary syntax to change gap based on
 viewport width.  You can also set gap to a number to set spacing in px.
 
 .. exec::docs.grid.gap
+
+### Row and column gap
+Use `rowGap` and `columnGap` props to set different spacing for rows and columns. `rowGap` and `columnGap` override
+`gap` prop if both are set:
+
+
+.. exec::docs.grid.gap_row_col
 
 ### Grow
 
