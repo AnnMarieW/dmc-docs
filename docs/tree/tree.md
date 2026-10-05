@@ -234,7 +234,6 @@ export interface RenderTreeNodePayload {
 | Selector     | Attribute      | Condition              | Value                  |
 |--------------|----------------|------------------------|------------------------|
 | node, label  | data-selected  | The node is selected   | –                      |
-| node, label  | data-hovered   | The node is hovered    | –                      |
 | node         | data-level     | –                      | Nesting level of the node |
 
 
