@@ -20,9 +20,34 @@ Use the property `checked` in the callbacks.
 
 .. exec::docs.checkbox.simple
 
+### Read only
+Set the `readOnly` prop to prevent the checkbox value from being changed by user interaction. The checkbox still
+displays its current value and reflects programmatic updates to the checked prop, but clicking it (or pressing Space) 
+does not toggle its state:
+
+
+.. exec::docs.checkbox.readonly
+
 ### States
 
 .. exec::docs.checkbox.states
+
+### Error state
+
+Use the `error` prop to display error message below the checkbox label. If you want to apply error styles to checkbox 
+without error message, use boolean `error` prop. If you want to display error message without applying error styles,
+set `withErrorStyles=False`.
+
+.. exec::docs.checkbox.error
+
+### Light variant
+
+Checkbox supports `filled` (default), `outline` and `light` variants. With `variant="light"`, checked and indeterminate
+states have a light background and a contrasting icon. Colors of the light variant are resolved with `theme.variantColorResolver`,
+the same way as in `Button` – color can be a key of `theme.colors` or any valid CSS color:
+
+
+.. exec::docs.checkbox.light_variant
 
 ### Change icons
 
