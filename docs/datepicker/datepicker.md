@@ -68,6 +68,11 @@ Set `level` prop to configure initial level that will be displayed:
 
 .. exec::docs.datepicker.level
 
+### Full width
+Set the `fullWidth` prop to make the date picker stretch to fill 100% of its parent container width:
+
+.. exec::docs.datepicker.fullwidth
+
 ### Hide outside dates
 Set `hideOutsideDates=True` to remove all dates that do not belong to the current month:
 
