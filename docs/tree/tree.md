@@ -198,8 +198,7 @@ export interface RenderTreeNodePayload {
     style: React.CSSProperties;
     onClick: (event: React.MouseEvent) => void;
     'data-selected': boolean | undefined;
-    'data-value': string;
-    'data-hovered': boolean | undefined;
+    'data-value': string;    
   };
 }
 
