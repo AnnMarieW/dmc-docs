@@ -87,6 +87,13 @@ dmc.ScrollArea(scrollTo={"top": 200, "left": "50%", "behavior": "auto"})
 
 .. exec::docs.scrollarea.scrollto
 
+### Start scroll position
+Use the `startScrollPosition` prop to set the initial scroll position when the component mounts. This approach avoids
+the flash of content at position (0, 0):
+
+
+.. exec::docs.scrollarea.startscrollposition
+
 ### ScrollAreaAutosize
 
 `ScrollAreaAutosize` component allows to create scrollable containers when given max-height is reached.
